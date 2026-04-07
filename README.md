@@ -106,7 +106,9 @@ pip install -r requirements.txt
 
 Create a file named `.env` in the root directory:
 
+```bash
 PINECONE_API_KEY=your_pinecone_api_key_here
+```
 
 Important:
 
