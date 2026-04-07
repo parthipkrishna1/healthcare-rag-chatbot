@@ -52,6 +52,18 @@ MedQuAD Dataset
 
 ---
 
+## 📸 Demo
+
+### Chat Interface
+
+![Chat Demo](assets/chat_demo.png)
+
+### Answer with Sources
+
+![Sources](assets/reply.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 * Python
