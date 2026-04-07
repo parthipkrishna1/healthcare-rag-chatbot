@@ -4,6 +4,25 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers medical questions us
 
 ---
 
+## 🚀 Quick Start
+
+```bash
+pip install -r requirements.txt
+```
+
+Create `.env`:
+
+```bash
+PINECONE_API_KEY=your_key
+```
+
+Run:
+
+```bash
+python ingest.py
+streamlit run app.py
+```
+
 ## 🚀 Features
 
 * Medical question answering using real dataset
@@ -59,23 +78,28 @@ requirements.txt → dependencies
 
 ### 1. Clone the repository
 
-git clone [https://github.com/parthipkrishna1/healthcare-rag-chatbot.git](https://github.com/parthipkrishna1/healthcare-rag-chatbot.git)
+```
+git clone https://github.com/parthipkrishna1/healthcare-rag-chatbot.git
 cd healthcare-rag-chatbot
+```
 
 ---
 
 ### 2. Create virtual environment (recommended)
 
+```
 python -m venv .venv
 source .venv/bin/activate (Linux/Mac)
 .venv\Scripts\activate (Windows)
+```
 
 ---
 
 ### 3. Install dependencies
 
+```
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🔑 Environment Variables (.env)
@@ -172,6 +196,23 @@ Total documents: ~47,000
 
 ---
 
+## 🤖 Setup Ollama (LLM)
+
+Install Ollama:
+
+[https://ollama.com/download](https://ollama.com/download)
+
+Pull the model:
+
+```
+ollama pull llama3
+```
+
+Run Ollama:
+
+```
+ollama serve
+```
 
 ## 🧪 Run the Project
 
@@ -191,9 +232,9 @@ Note: First run may take 20–30 minutes
 ---
 
 ### Step 2: Run chatbot UI
-
+```
 streamlit run app.py
-
+```
 Open in browser:
 [http://localhost:8501](http://localhost:8501)
 
