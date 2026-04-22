@@ -122,13 +122,6 @@ Create a file named `.env` in the root directory:
 PINECONE_API_KEY=your_pinecone_api_key_here
 ```
 
-Important:
-
-* Do NOT upload `.env` to GitHub
-* It is ignored using `.gitignore`
-
----
-
 ## 📊 Dataset Setup (MedQuAD)
 
 ### Step 1: Download dataset
@@ -172,9 +165,9 @@ datasets/medquad/
 ### ⚠️ Important
 
 * Each folder contains multiple `.xml` files
-* Your loader (`medquad_loader.py`) automatically scans **all subfolders recursively**, so no changes are needed
+* The loader (`medquad_loader.py`) automatically scans **all subfolders recursively**, so no changes are needed
 
-This line in your code handles it:
+This line in the code handles it:
 
 ```python
 for root_dir, dirs, files in os.walk(folder_path):
@@ -190,7 +183,7 @@ You DO NOT need to:
 * flatten folders
 * manually move XML files
 
-Your system already supports this structure.
+The system already supports this structure.
 
 ---
 
